@@ -1,0 +1,9 @@
+export enum Status {
+  CANCELLED = 'CANCELLED',
+  ERROR = 'ERROR',
+  NONE = 'NONE',
+  PENDING = 'PENDING',
+  REJECTED = 'REJECTED',
+  SUCCESS = 'SUCCESS',
+  WARNING = 'WARNING',
+}

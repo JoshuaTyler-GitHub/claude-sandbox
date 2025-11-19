@@ -1,0 +1,67 @@
+{
+  "compilerOptions": {
+    "allowJs": true,
+    "allowSyntheticDefaultImports": true,
+    "alwaysStrict": true,
+    "baseUrl": "./",
+    "declaration": false,
+    "emitDecoratorMetadata": true,
+    "esModuleInterop": true,
+    "experimentalDecorators": true,
+    "forceConsistentCasingInFileNames": true,
+    "incremental": true,
+    "inlineSourceMap": false,
+    "inlineSources": false,
+    "isolatedModules": true,
+    "jsx": "react-jsx",
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "module": "esnext",
+    "moduleResolution": "node",
+    "noEmit": true,
+    "noFallthroughCasesInSwitch": true,
+    "noImplicitAny": true,
+    "noImplicitReturns": true,
+    "noImplicitThis": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "outDir": "./dist",
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ],
+    "paths": {
+      "@api/*": ["app/api/*"],
+      "@app/*": ["app/*"],
+      "@components/*": ["components/*"],
+      "@config/*": ["config/*"],
+      "@errors/*": ["errors/*"],
+      "@icons/*": ["public/icons/*"],
+      "@images/*": ["public/images/*"],
+      "@layouts/*": ["app/_lib/layouts/*"],
+      "@loading/*": ["app/_lib/loading/*"],
+      "@lib/*": ["lib/*"],
+      "@log": ["log/index.ts"],
+      "@public/*": ["public/*"],
+      "@repositories/*": ["repositories/*"],
+      "@resources/*": ["resources/*"],
+      "@services/*": ["services/*"],
+      "@styles/*": ["styles/*"],
+      "@tasks/*": ["tasks/*"],
+      "@utils/*": ["utils/*"],
+      "@widgets/*": ["widgets/*"]
+    },
+    "resolveJsonModule": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "target": "es5"
+  },
+  "exclude": ["node_modules", "temp", "tmp"],
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    ".next/types/**/*.ts",
+    ".next/dev/types/**/*.ts"
+  ]
+}

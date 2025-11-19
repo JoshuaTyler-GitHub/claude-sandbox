@@ -1,0 +1,42 @@
+{
+  "[dotenv]": {
+    "editor.rulers": [
+      { "column": 80, "color": "#007acc" } // code-lines should not exceed 80 characters
+    ]
+  },
+  "[typescript]": {
+    "editor.rulers": [
+      { "column": 80, "color": "#007acc" } // code-lines should not exceed 80 characters
+    ]
+  },
+  "[typescriptreact]": {
+    "editor.rulers": [
+      { "column": 80, "color": "#007acc" } // code-lines should not exceed 80 characters
+    ]
+  },
+  "editor.tabSize": 2,
+  "todo-tree.tree.showBadges": true,
+  "todo-tree.general.tags": ["BUG", "HACK", "FIXME", "TODO", "[ ]", "[x]"],
+    "typescript.tsdk": "node_modules/typescript/lib",
+  "workbench.editor.customLabels.patterns": {
+    "**/index.ts": "${dirname} - index.ts",
+    "**/app/**/layout.tsx": "/${dirname} - layout.tsx",
+    "**/app/**/[[]*[]]/layout.tsx": "/${dirname(1)} / ${dirname} - layout.tsx",
+    "**/app/**/[[]*[]]/[[]*[]]/layout.tsx": "${dirname(2)} / ${dirname(1)} / ${dirname} - layout.tsx",
+    "**/app/**/loading.tsx": "/${dirname} - loading.tsx",
+    "**/app/**/[[]*[]]/loading.tsx": "/${dirname(1)} / ${dirname} - loading.tsx",
+    "**/app/**/[[]*[]]/[[]*[]]/loading.tsx": "${dirname(2)} / ${dirname(1)} / ${dirname} - loading.tsx",
+    "**/app/**/not-found.tsx": "/${dirname} - not-found.tsx",
+    "**/app/**/[[]*[]]/not-found.tsx": "/${dirname(1)} / ${dirname} - not-found.tsx",
+    "**/app/**/[[]*[]]/[[]*[]]/not-found.tsx": "${dirname(2)} / ${dirname(1)} / ${dirname} - not-found.tsx",
+    "**/app/**/page.tsx": "/${dirname} - page.tsx",
+    "**/app/**/[[]*[]]/page.tsx": "/${dirname(1)} / ${dirname} - page.tsx",
+    "**/app/**/[[]*[]]/[[]*[]]/page.tsx": "${dirname(2)} / ${dirname(1)} / ${dirname} - page.tsx",
+    "**/app/**/providers.tsx": "/${dirname} - providers.tsx",
+    "**/app/**/[[]*[]]/providers.tsx": "/${dirname(1)} / ${dirname} - providers.tsx",
+    "**/app/**/[[]*[]]/[[]*[]]/providers.tsx": "${dirname(2)} / ${dirname(1)} / ${dirname} - providers.tsx",
+    "**/app/**/route.ts": "/${dirname} - route.ts",
+    "**/app/**/[[]*[]]/route.ts": "/${dirname(1)} / ${dirname} - route.ts",
+    "**/app/**/[[]*[]]/[[]*[]]/route.ts": "${dirname(2)} / ${dirname(1)} / ${dirname} - route.ts"
+  }
+}

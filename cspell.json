@@ -1,0 +1,72 @@
+{
+  // ignored files
+  "ignorePaths": ["build/**", "public/**"],
+
+  // language - current active spelling language
+  "language": "en",
+
+  // words - list of words to be always considered correct
+  "words": [
+    // apple-id
+    "appleid",
+
+    // apple-maps
+    "daddr",
+    "dirflg",
+
+    // aria
+    "describedby",
+    "labelledby",
+
+    // css
+    "classname",
+
+    // custom
+    "cooldown",
+    "resetable",
+    "unflatten",
+    "unflattened",
+
+    // firebase
+    "appspot",
+    "firestore",
+    "firebasestorage",
+    "ingestions",
+
+    // fonts
+    "roboto",
+
+    // hero-ui
+    "dismissable",
+    "heroui",
+
+    // prettier
+    "parens",
+
+    // qr codes
+    "eyeframes",
+
+    // react
+    "pressend",
+    "pressstart",
+
+    // sonar
+    "nosonar",
+    "sonarqube",
+
+    // swiper
+    "swiper",
+
+    // tailwind
+    "tailwindcss",
+    "xlarge",
+    "xxlarge",
+
+    // web
+    "khtml",
+    "nodownload"
+  ],
+
+  // flagWords - list of words to be always considered incorrect
+  "flagWords": []
+}
