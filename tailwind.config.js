@@ -1,55 +1,17 @@
-/**
- * @imports
- */
-// node_modules
-import { heroui } from '@heroui/react';
+// tailwind.config.js
+const { heroui } = require('@heroui/theme');
 
-/**
- * @type {import('tailwindcss').Config}
- */
-export const content = [
-  './node_modules/@heroui-org/theme/dist/**/*.{js,ts,jsx,tsx}',
-  './app/**/*.{html,js,ts,jsx,tsx}',
-  './components/**/*.{html,js,ts,jsx,tsx}',
-  './widgets/**/*.{html,js,ts,jsx,tsx}',
-];
-export const darkMode = 'class';
-export const theme = {
-  extend: {},
+/** @type {import('tailwindcss').Config} */
+module.exports = {
+  content: [
+    // single component styles
+    './node_modules/@heroui/theme/dist/components/button.js',
+    // or you can use a glob pattern (multiple component styles)
+    './node_modules/@heroui/theme/dist/components/(button|snippet|code|input).js',
+  ],
+  theme: {
+    extend: {},
+  },
+  darkMode: 'class',
+  plugins: [heroui()],
 };
-export const plugins = [
-  heroui({
-    themes: {
-      brand: {
-        colors: {
-          background: '#fafaff',
-          danger: {
-            DEFAULT: '#DC3545',
-            foreground: '#ffffff',
-          },
-          default: {
-            DEFAULT: '#F8F9FA',
-            foreground: '#000000',
-          },
-          primary: {
-            DEFAULT: '#ee422c',
-            foreground: '#ffffff',
-          },
-          secondary: {
-            DEFAULT: '#6C757D',
-            foreground: '#ffffff',
-          },
-          success: {
-            DEFAULT: '#28A745',
-            foreground: '#ffffff',
-          },
-          warning: {
-            DEFAULT: '#FFC107',
-            foreground: '#ffffff',
-          },
-        },
-        extend: 'light',
-      },
-    },
-  }),
-];
